@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
 import Container from "../../components/container/Container ";
 import Catagory from "./Catagory";
+import PopulorItem from "./PopulorItem";
 import Banner from "./banner/Banner";
 
 
@@ -17,6 +18,7 @@ const Home = () => {
             <Container>
                 <Banner />
                 <Catagory />
+                <PopulorItem />
             </Container>
         </div>
     );
