@@ -1,7 +1,11 @@
 import Header from "../../components/Header";
 import Container from "../../components/container/Container ";
+import CallUs from "./CallUs";
 import Catagory from "./Catagory";
+import ChefService from "./ChefService";
+import OurMenu from "./OurMenu";
 import PopulorItem from "./PopulorItem";
+import Testimonuals from "./Testimonuals";
 import Banner from "./banner/Banner";
 
 
@@ -10,16 +14,16 @@ const Home = () => {
     return (
 
         <div>
-            home
-            <button className="btn btn-outline btn-info">Info</button>
-            <button className="btn btn-outline btn-success">Success</button>
-            <button className="btn btn-outline btn-warning">Warning</button>
-            <button className="btn btn-outline btn-error">Error</button>
             <Container>
                 <Banner />
                 <Catagory />
+                <ChefService />
                 <PopulorItem />
+                <CallUs />
+                <OurMenu />
+                <Testimonuals />
             </Container>
+
         </div>
     );
 };

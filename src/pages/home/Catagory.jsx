@@ -26,24 +26,24 @@ const Catagory = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <img src={slide1} alt="slide1" />
+                        <img className="rounded-xl" src={slide1} alt="slide1" />
                         <h1 className='text-center text-2xl text-white -mt-16 font-bold uppercase'>Salat</h1>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={slide2} alt="slide1" />
+                        <img className="rounded-xl" src={slide2} alt="slide1" />
                         <h1 className='text-center text-2xl text-white -mt-16 font-bold uppercase'>pizza</h1>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={slide3} alt="slide1" />
+                        <img className="rounded-xl" src={slide3} alt="slide1" />
                         <h1 className='text-center text-2xl text-white -mt-16 font-bold uppercase'>soups</h1>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={slide4} alt="slide1" />
+                        <img className="rounded-xl" src={slide4} alt="slide1" />
                         <h1 className='text-center text-2xl text-white -mt-16 font-bold uppercase'>desserts</h1>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={slide5} alt="slide1" />
+                        <img className="rounded-xl" src={slide5} alt="slide1" />
                         <h1 className='text-center text-2xl text-white -mt-16 font-bold uppercase'>Salat</h1>
                     </SwiperSlide>
 
