@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 const OurMenu = () => {
     return (
         <div>
-            <div className="text-white w-full bg-cover opacity-100 " style={{ backgroundImage: `url(${featured})` }}>
+            <div className="text-white w-full bg-fixed bg-cover opacity-100 " style={{ backgroundImage: `url(${featured})` }}>
                 <div className='bg-gradient-to-r from-[#3d3a3a45] to-[#3d3a3a4a] py-7'>
                     <Header
                         header={'Check it out-'}
