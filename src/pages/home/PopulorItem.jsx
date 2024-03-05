@@ -1,24 +1,18 @@
 import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import MenuItem from "../shared/menuItem/MenuItem";
-
+import useMenu from "../../hooks/useMenu"
 
 const PopulorItem = () => {
-    const [menu, setMemu] = useState([]);
-    useEffect(() => {
-        fetch('menu.json')
-            .then(res => res.json())
-            .then(data => {
-                const popularItems = data.filter(item => item.category === 'popular');
-                setMemu(popularItems);
-            })
-    }, [])
+    const [menu] = useMenu()
+    const popularItems = menu.filter(item => item.category === 'popular');
+
     return (
         <>
             <Header title='FROM OUR MENU' header='Check it out' />
             <div className="grid md:grid-cols-2 gap-4">
                 {
-                    menu.map(item => <MenuItem
+                    popularItems.map(item => <MenuItem
                         key={item._id}
                         item={item}
                     ></MenuItem>)
