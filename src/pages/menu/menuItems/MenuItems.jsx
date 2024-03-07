@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import Header from "../../../components/Header";
 import useMenu from "../../../hooks/useMenu";
 import MenuItem from "../../shared/menuItem/MenuItem";
@@ -21,8 +22,10 @@ const MenuItems = ({ categorys, title, header }) => {
                     ></MenuItem>)
                 }
             </div>
-            <div className="w-full flex justify-center mx-auto">
-                <button className="btn btn-outline btn-warning border-b-4">ORDER YOUR FAVOURITE FOOD</button>
+            <div className="w-full flex justify-center mx-auto py-7">
+                <Link to={`/order/${categorys}`}>
+                    <button className="btn btn-outline btn-warning border-b-4 ">ORDER YOUR FAVOURITE FOOD</button>
+                </Link>
             </div>
         </div>
     );

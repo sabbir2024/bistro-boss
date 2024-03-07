@@ -8,7 +8,7 @@ const MenuItem = ({ item }) => {
 
             <img className="w-14" style={{ borderRadius: '0 50px 50px 50px' }} src={image} alt="" />
             <div>
-                <h3 className="uppercase text-lg">{name}----------</h3>
+                <h3 className="uppercase text-lg py-7">---------{name}------</h3>
                 <p>{recipe}</p>
             </div>
             <p className="text-[#BB8506]">${price}</p>
